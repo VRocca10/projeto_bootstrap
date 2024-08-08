@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bootstrap</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Rocca's Car</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-a-loja" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a Loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#novos" class="nav-link">
+                            <i class="bi bi-car-front me-1"></i>
+                            Novos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#semi-novos" class="nav-link">
+                            <i class="bi bi-car-front-fill me-1"></i>
+                            Semi-novos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-loja">
+            <div class="container-md-sm-lg ">
+                <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="images/loja.jpeg" class="d-block w-100" height="550" alt="Imagem da loja">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/civic.jpeg" class="d-block w-100" height="550" alt="Civic OKM">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="images/corolla.png" class="d-block w-100" height="550" alt="Corolla semi-novo">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/lojacarro.jpeg" class="d-block w-100 rounded" alt="Foto da loja de carros">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre a <span class="text-color">Loja de Carros</span></h2>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, a perferendis.
+                                Necessitatibus, vitae similique facilis inventore nemo nostrum, velit assumenda omnis
+                                ullam
+                                minima animi eius, iusto laboriosam? Perferendis, dolor veniam.
+                            </p>
+                            <h3 class="section-title">Nosso <span class="text-color">Estoque</span></h3>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores minima dolorum
+                                laborum
+                                at error voluptas, illo, sit ad a, itaque vitae. Voluptatibus odio totam tempora
+                                consectetur
+                                excepturi porro itaque hic.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="novos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Carros <span class="text-color">novos 0KM</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/hrv.jpeg" alt="" class="d-block w-100 rounded" height="200">
+                        <h3 class="section-title text-color fs-4 ">
+                            <i class="bi bi-ev-front"></i>
+                            SUV
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ipsum, aliquam eius, aut
+                            beatae consectetur enim esse quo alias animi accusantium nam ad libero quidem, eos incidunt.
+                            Unde, eos rem.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/luxo.jpeg" alt="" class="d-block w-100 rounded" height="200">
+                        <h3 class="section-title text-color fs-4">
+                            <i class="bi bi-ev-front"></i>
+                            Luxo
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ipsum, aliquam eius, aut
+                            beatae consectetur enim esse quo alias animi accusantium nam ad libero quidem, eos incidunt.
+                            Unde, eos rem.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/onix.jpeg" alt="" class="d-block w-100 rounded" height="200">
+                        <h3 class="section-title text-color fs-4">
+                            <i class="bi bi-ev-front"></i>
+                            Popular
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ipsum, aliquam eius, aut
+                            beatae consectetur enim esse quo alias animi accusantium nam ad libero quidem, eos incidunt.
+                            Unde, eos rem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="semi-novos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Semi <span class="text-color">Novos</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-seminovos">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#suv"
+                                class="fw-bold text-start nav-link text-color active">SUV</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#luxo"
+                                class="fw-bold text-start nav-link text-color ">LUXO</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#popular"
+                                class="fw-bold text-start nav-link text-color ">POPULAR</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="suv">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 " height="120" src="images/seminovo/pulse.jpeg"
+                                            alt="">
+                                        <h5 class="text-color fw-bold">SUV Semi nova</h5>
+                                        <p>
+                                            Semi novo da Fiat</br>
+                                            A partir de $2.000
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 " height="120" src="images/seminovo/jeep.jpeg" alt="">
+                                        <h5 class="text-color fw-bold">SUV Semi nova</h5>
+                                        <p>
+                                            Semi novo da Jeep </br>
+                                            A partir de $5.000
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 " height="120" src="images/seminovo/eco.jpeg" alt="">
+                                        <h5 class="text-color fw-bold">SUV Semi nova</h5>
+                                        <p>
+                                            Semi novo da Fiat</br>
+                                            A partir de $10.000
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="luxo">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 " height="120" src="images/luxo/audi.jpeg" alt="">
+                                        <h5 class="text-color fw-bold">Semi novos de Luxo</h5>
+                                        <p>
+                                            Semi novo da AUDI</br>
+                                            A partir de $2.000
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 " height="120" src="images/luxo/bmw.jpeg" alt="">
+                                        <h5 class="text-color fw-bold">Semi novos de Luxo</h5>
+                                        <p>
+                                            Semi novo da BMW </br>
+                                            A partir de $5.000
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 " height="120" src="images/luxo/mercedes.jpeg" alt="">
+                                        <h5 class="text-color fw-bold">Semi novos de Luxo</h5>
+                                        <p>
+                                            Semi novo da Mercedes</br>
+                                            A partir de $10.000
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="popular">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 " height="120" src="images/popular/celta.jpeg" alt="">
+                                        <h5 class="text-color fw-bold">Semi novos Popular</h5>
+                                        <p>
+                                            Semi novo da Chevrolet</br>
+                                            A partir de $2.000
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 " height="120" src="images/popular/gol.jpeg" alt="">
+                                        <h5 class="text-color fw-bold">Semi novos Popular</h5>
+                                        <p>
+                                            Semi novo da Volks </br>
+                                            A partir de $5.000
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 " height="120" src="images/popular/onix.jpeg" alt="">
+                                        <h5 class="text-color fw-bold">Semi novos Popular</h5>
+                                        <p>
+                                            Semi novo da Chevrolet</br>
+                                            A partir de $10.000
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco">
+            <div class="container">
+                <h2 class="section-title text-center">Fale <span class="text-color">Conosco</span></h2>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-color">Seu Nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-color">Seu E-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-color">Seu Telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-color">Sua Mensagem</label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-color">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-color"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-color"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-color"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-color">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua: Butantã N°40, Bairro dos Autos - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="navbar h5 d-flex justify-content-center pt-3 pb-3">Todos os direitos Reservados - 2024</footer>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

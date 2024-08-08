@@ -1,0 +1,64 @@
+body {
+    font-family: roboto, sans-serif;
+}
+
+.navbar {
+    background-color: rgb(119, 117, 117);
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: azure;
+    color: black;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand {
+    color: black
+}
+
+
+.navbar-toggler {
+    background-color: #fff;
+}
+
+.section-title {
+    font-family: abril fatfamily;
+}
+
+
+#sobre-a-loja, #semi-novos{
+    background-color: rgb(172, 168, 168);
+}
+
+.text-color {
+    color: rgb(63, 62, 62);
+}
+
+.nav-seminovos .nav-link.active,
+#fale-conosco button {
+    background-color:rgb(63, 62, 62) ;
+    color: #fff;
+}
+
+.nav-seminovos .nav-link:hover {
+    color: rgb(63, 62, 62) ;
+}
+
+.nav-seminovos .nav-link.active:hover {
+    color: #fff;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
